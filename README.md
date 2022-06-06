@@ -1,29 +1,19 @@
-<!-- [app_name](deploy.com)
+My Portfolio
 ---
 
-_**tuiter** is a "Twitter Mockup" with a twist._ // what is?
-_Developed for educational purposes and for fun's sake._  // more info?
-_This website was built with [Next.js Framework](https://nextjs.org/)._  // focus
-_This project is in a WIP state._  // is WIP?
+_This website was built with [Next.js](https://nextjs.org/)._  
 
 <h3>For this project I used:</h3>  
 
 - [Node.js](https://nodejs.org)
 - [Next.js](https://nextjs.org/)
   - [Font Awesome React Component](https://fontawesome.com/v5/docs/web/use-with/react)
-- [Firebase](https://firebase.google.com/)
-  - [Firebase.js](https://www.npmjs.com/package/firebase)
-  - [Firebase Authentication](https://firebase.google.com/docs/auth)
-    - [Authenticate Using GitHub](https://firebase.google.com/docs/auth/web/github-auth)
+- [Tailwind CSS](https://tailwindcss.com/)
 - [ESLint](https://www.npmjs.com/package/eslint)
 
 ---
 
-[some other link or noteworthy thing?](https://other-relevant-link-or-noteworthy-thing/)  
-
----
-
-This web app is yet to be deployed.  
+<!-- This web app is yet to be deployed.  
 
 This Next.js Web App has been deployed to [Vercel]().  
 

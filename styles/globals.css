@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html, body {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .color-wwhite {
+    @apply text-[#ccd6f6];
+  }
+
+  .color-gray {
+    @apply text-[#8892b0];
+  }
+
+  .blue-background {
+    @apply bg-[#0a192f];
+  }
+
+  .grey-blackground {
+    @apply bg-[#333333];
+  }
+
+  .lgrey-blackground {
+    @apply bg-[#565f69];
+  }
+
+  .cyan-blackground {
+    @apply bg-[#6fc2b0];
+  }
+
+  .shadow-color {
+    @apply shadow-[#040c16];
+  }
+
+  .navbar-li {
+    @apply px-4 cursor-pointer;
+  }
+
+  .mobile-li {
+    @apply py-6 text-4xl;
+  }
+
+  .social-li {
+    @apply w-[160px] h-[60px] flex justify-between items-center  duration-300 ml-[-90px] hover:ml-[-10px];
+  }
+
+  .social-a {
+    @apply flex justify-around items-center w-full text-gray-300;
+  }
+
+  .social-svg {
+    @apply text-4xl;
+  }
+
+  .button-animation:hover span {
+    @apply rotate-90;
+  }
+
+  .about-grid {
+    @apply w-full grid gap-8;
+  }
+}
