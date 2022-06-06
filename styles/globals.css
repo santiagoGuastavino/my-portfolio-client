@@ -62,4 +62,33 @@
   .about-grid {
     @apply w-full grid gap-8;
   }
+
+  .project-box {
+    @apply shadow-lg shadow-color container rounded-md flex justify-center items-center mx-auto;
+  }
+
+  .project-box div.on-hover {
+    @apply opacity-0 flex flex-col justify-center items-center;
+  }
+
+  .project-box:hover div.on-hover {
+    @apply opacity-100;
+  }
+
+  .project-button {
+    @apply text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg;
+  }
 }
+
+.image-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 640px) {
+  .on-hover {
+    min-height: 400px;
+  }
+}
+

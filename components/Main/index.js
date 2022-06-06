@@ -3,7 +3,7 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
 export default function Main () {
   return (
-    <main name='main' className='w-full h-screen blue-background'>
+    <main name='Home' className='w-full h-screen blue-background'>
       <section className='max-w-[900px] mx-auto px-8 flex flex-col justify-center h-full'>
         <p className='text-pink-600'>
           Hi, my name is

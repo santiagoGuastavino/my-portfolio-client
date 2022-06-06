@@ -2,7 +2,7 @@ import { aboutText } from '../../public/text/aboutText'
 
 export default function About () {
   return (
-    <main name='about' className='w-full h-screen blue-background text-gray-300'>
+    <main name='About' className='w-full h-screen blue-background text-gray-300'>
       <section className='flex flex-col justify-center items-center w-full h-full'>
         <article className='about-grid grid-cols-2'>
           <div className='sm:text-right pb-8 pl-4'>

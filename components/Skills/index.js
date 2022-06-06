@@ -35,7 +35,7 @@ const skillsAndFiles = [
 
 export default function Skills () {
   return (
-    <main name='skills' className='w-full h-screen blue-background text-gray-300'>
+    <main name='Skills' className='w-full h-screen blue-background text-gray-300'>
       <section className='max-w-[900px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <article>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
