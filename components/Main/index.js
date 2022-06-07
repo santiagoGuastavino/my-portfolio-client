@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-scroll'
 
 export default function Main () {
   return (
@@ -19,7 +20,9 @@ export default function Main () {
         </p>
         <div>
           <button className='text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 button-animation duration-300'>
-            Check out my work
+            <Link to='Work' smooth={true} duration={500}>
+              Check out my work
+            </Link>
             <span className='ml-5 duration-300'>
               <FontAwesomeIcon icon={faPlay} />
             </span>

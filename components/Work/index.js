@@ -1,12 +1,18 @@
 import Project from '../Project'
+import myPortfolioImg from '../../public/images/web-screenshots/my-portfolio.jpg'
 import reactTailwindImg from '../../public/images/web-screenshots/react-tailwind.jpg'
 import tuiterImg from '../../public/images/web-screenshots/tuiter.jpg'
 import parallaxImg from '../../public/images/web-screenshots/parallax.jpg'
 import moviesReactReduxImg from '../../public/images/web-screenshots/movies-react-redux.jpg'
 import gameCentralImg from '../../public/images/web-screenshots/game-central.jpg'
-import gameCentralDashboardImg from '../../public/images/web-screenshots/game-central-dashboard.jpg'
 
 const projects = [
+  {
+    image: myPortfolioImg,
+    demoLink: 'https://my-portfolio-santiagoguastavino.vercel.app/',
+    codeLink: 'https://github.com/santiagoGuastavino/my-portfolio',
+    title: 'Next.js, Tailwind CSS'
+  },
   {
     image: reactTailwindImg,
     demoLink: 'https://smg-react-tailwind.herokuapp.com/',
@@ -36,12 +42,6 @@ const projects = [
     demoLink: 'https://g6-game-central.herokuapp.com/',
     codeLink: 'https://github.com/matiasncocco/grupo_6_GameCentral',
     title: 'MERN Stack, MVC'
-  },
-  {
-    image: gameCentralDashboardImg,
-    demoLink: 'https://game-central-dashboard.herokuapp.com/',
-    codeLink: 'https://github.com/santiagoGuastavino/game-central-dashboard',
-    title: 'React.js'
   }
 ]
 
