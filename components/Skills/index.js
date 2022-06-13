@@ -1,15 +1,19 @@
 import expressIcon from '../../public/images/expressjs.png'
-import gitIcon from '../../public/images/git.png'
 import javascriptIcon from '../../public/images/javascript.png'
 import nextIcon from '../../public/images/nextjs.png'
 import nodeIcon from '../../public/images/nodejs.webp'
 import reactIcon from '../../public/images/reactjs.png'
+import typescriptIcon from '../../public/images/typescript.png'
 import ImageBox from '../ImageBox'
 
 const skillsAndFiles = [
   {
     file: javascriptIcon,
     skill: 'Javascript'
+  },
+  {
+    file: typescriptIcon,
+    skill: 'Typescript'
   },
   {
     file: nodeIcon,
@@ -26,10 +30,6 @@ const skillsAndFiles = [
   {
     file: nextIcon,
     skill: 'Next.js'
-  },
-  {
-    file: gitIcon,
-    skill: 'Git'
   }
 ]
 

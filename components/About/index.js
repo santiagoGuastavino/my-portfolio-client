@@ -1,4 +1,4 @@
-import { aboutText } from '../../public/text/aboutText'
+import { aboutText } from '../../data/aboutText'
 
 export default function About () {
   return (

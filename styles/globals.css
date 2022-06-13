@@ -78,6 +78,18 @@
   .project-button {
     @apply text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg;
   }
+
+  .contact-input {
+    @apply p-2 bg-[#ccd6f6] focus:outline-none;
+  }
+
+  .default-pink-button {
+    @apply text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center duration-300;
+  }
+
+  .disabled-button {
+    @apply border-2 px-4 py-3 my-8 mx-auto flex items-center duration-300 cursor-not-allowed opacity-80 text-gray-600 border-gray-600;
+  }
 }
 
 .image-box {
@@ -91,4 +103,3 @@
     min-height: 400px;
   }
 }
-
