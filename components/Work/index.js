@@ -9,7 +9,7 @@ import gameCentralImg from '../../public/images/web-screenshots/game-central.jpg
 const projects = [
   {
     image: myPortfolioImg,
-    demoLink: 'https://my-portfolio-santiagoguastavino.vercel.app/',
+    demoLink: 'https://my-portfolio-eta-lemon.vercel.app/',
     codeLink: 'https://github.com/santiagoGuastavino/my-portfolio',
     title: 'Next.js, Tailwind CSS'
   },
