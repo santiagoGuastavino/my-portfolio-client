@@ -1,48 +1,48 @@
-import { useState, useEffect } from 'react'
-import { postReq } from '../../helpers/postReq'
-import Button from '../Button'
+// import { useState, useEffect } from 'react'
+// import { postReq } from '../../helpers/postReq'
+// import Button from '../Button'
 
-const regexEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
+// const regexEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
 
-const button = {
-  DISABLED: 0,
-  ENABLED: 1,
-  PROCESSING: 2,
-  DONE: 3
-}
+// const button = {
+//   DISABLED: 0,
+//   ENABLED: 1,
+//   PROCESSING: 2,
+//   DONE: 3
+// }
 
 export default function Contact () {
-  const [buttonState, setButtonState] = useState(button.DISABLED)
-  const [feed, setFeed] = useState('')
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
+  // const [buttonState, setButtonState] = useState(button.DISABLED)
+  // const [feed, setFeed] = useState('')
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   message: ''
+  // })
 
-  const handleInput = (e) => {
-    const key = e.target.name
-    setFormData({
-      ...formData,
-      [key]: e.target.value
-    })
-  }
+  // const handleInput = (e) => {
+  //   const key = e.target.name
+  //   setFormData({
+  //     ...formData,
+  //     [key]: e.target.value
+  //   })
+  // }
 
-  useEffect(() => {
+  // useEffect(() => {
 
-  }, [formData])
+  // }, [formData])
 
-  const handleClick = async (e) => {
-    e.preventDefault()
-    if (buttonState === button.ENABLED) {
-      const response = await postReq(`${process.env.ENDPOINT}/mailer`)
-      try {
-        console.log(response)
-      } catch (err) {
-        console.log(err)
-      }
-    }
-  }
+  // const handleClick = async (e) => {
+  //   e.preventDefault()
+  //   if (buttonState === button.ENABLED) {
+  //     const response = await postReq(`${process.env.ENDPOINT}/mailer`)
+  //     try {
+  //       console.log(response)
+  //     } catch (err) {
+  //       console.log(err)
+  //     }
+  //   }
+  // }
 
   return (
     <main name='Contact' className='w-full h-screen blue-background flex justify-center items-center p-4'>
