@@ -1,17 +1,17 @@
 import Project from '../Project'
-import myPortfolioImg from '../../public/images/web-screenshots/my-portfolio.jpg'
 import reactTailwindImg from '../../public/images/web-screenshots/react-tailwind.jpg'
 import tuiterImg from '../../public/images/web-screenshots/tuiter.jpg'
 import parallaxImg from '../../public/images/web-screenshots/parallax.jpg'
 import moviesReactReduxImg from '../../public/images/web-screenshots/movies-react-redux.jpg'
 import gameCentralImg from '../../public/images/web-screenshots/game-central.jpg'
+import blogsImg from '../../public/images/web-screenshots/blogs.jpg'
 
 const projects = [
   {
-    image: myPortfolioImg,
-    demoLink: 'https://my-portfolio-eta-lemon.vercel.app/',
-    codeLink: 'https://github.com/santiagoGuastavino/my-portfolio',
-    title: 'Next.js, Tailwind CSS'
+    image: blogsImg,
+    demoLink: 'https://blogs-mern-client.herokuapp.com/',
+    codeLink: 'https://github.com/santiagoGuastavino/blogs-mern-client',
+    title: 'MERN Stack'
   },
   {
     image: reactTailwindImg,
