@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import {
-  faEnvelope
-  // faUser,
-  // faFile
+  faEnvelope,
+  faUser,
+  faFile
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
 
@@ -28,15 +28,15 @@ export default function Socials () {
           <FontAwesomeIcon icon={faEnvelope} className='social-svg ml-2.5' />
         </Link>
       </li>
-      {/* <li className='social-li lgrey-blackground'>
-        <a href='/' className='social-a'>
+      <li className='social-li lgrey-blackground'>
+        <a href='https://docdro.id/bWLbh2v' target='_blank' rel='noreferrer' className='social-a cursor-pointer'>
           Resume
           <div className='relative'>
             <FontAwesomeIcon icon={faUser} className='relative social-svg mr-1' />
             <FontAwesomeIcon icon={faFile} className='absolute text-[25px] top-4 left-5 text-gray-400' />
           </div>
         </a>
-      </li> */}
+      </li>
     </ul>
   )
 }
