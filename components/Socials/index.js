@@ -6,10 +6,15 @@ import {
   faFile
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
+import { resumeURL } from '../../helpers/resumeURL'
 
-export default function Socials () {
+export default function Socials ({ show }) {
   return (
-    <ul className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+    <ul className={
+      show
+        ? 'md:flex fixed flex-col top-[35%] left-0'
+        : 'hidden md:flex fixed flex-col top-[35%] left-0'
+      }>
       <li className='social-li bg-blue-600'>
         <a href='https://www.linkedin.com/in/smguastavino/' target='_blank' rel='noreferrer' className='social-a'>
           LinkedIn
@@ -29,7 +34,7 @@ export default function Socials () {
         </Link>
       </li>
       <li className='social-li lgrey-blackground'>
-        <a href='https://docdro.id/bWLbh2v' target='_blank' rel='noreferrer' className='social-a cursor-pointer'>
+        <a href={resumeURL} target='_blank' rel='noreferrer' className='social-a cursor-pointer'>
           Resume
           <div className='relative'>
             <FontAwesomeIcon icon={faUser} className='relative social-svg mr-1' />

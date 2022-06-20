@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import NavLink from '../NavLink'
+import Socials from '../Socials'
 
 const links = [
   'Home',
@@ -44,6 +45,9 @@ export default function Navbar () {
       {/* mobile menu */}
       {mobileMenu === true &&
         <ul className='absolute top-0 left-0 w-full h-screen blue-background flex flex-col justify-center items-center'>
+          <Socials
+            show
+          />
           {
             links.map((link, i) => (
               <NavLink
