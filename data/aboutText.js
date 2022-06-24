@@ -9,5 +9,5 @@ export const aboutText = [
   'Clever using Object-Relational mappers like Prisma, Sequelize and Mongoose',
   'Experienced in HTML, CSS and stylesheet processors such as Sass, Less and Tailwind CSS.',
   'On my own ground working under Agile Methodologies like Scrum and Kanban.',
-  "Handy with a really big chunk of Node libraries and packages that didn't make it to the portfolio."
+  "Handy with a really big chunk of other Node libraries and packages that didn't make it to the portfolio."
 ]

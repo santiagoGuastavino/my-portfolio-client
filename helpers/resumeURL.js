@@ -1,1 +1,1 @@
-export const resumeURL = 'https://docdro.id/79iR9TY'
+export const resumeURL = 'https://docdro.id/uT1mhgj'
