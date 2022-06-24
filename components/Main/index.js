@@ -15,8 +15,17 @@ export default function Main () {
         <h2 className='text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold color-gray'>
           I&apos;m a Full Stack Web Developer
         </h2>
-        <p className='color-gray py-4 max-w[700px]'>
-          Skilled in writing clean code. Proficient in mobile-first responsive design development. Good knowledge of Javascript and web-based technologies. Quick learner, responsible and self-motivated. Passionate about making my workspace follow my own guidelines.
+        <p className='color-gray pt-4 max-w[700px]'>
+          Skilled in writing clean code.
+        </p>
+        <p className='color-gray max-w[700px]'>
+          Proficient in mobile-first responsive design development.
+        </p>
+        <p className='color-gray max-w[700px]'>
+          Good knowledge of Javascript and web-based technologies.
+        </p>
+        <p className='color-gray pb-4 max-w[700px]'>
+          Quick learner, responsible and self-motivated.
         </p>
         <div>
           <button className='text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 button-animation duration-300'>

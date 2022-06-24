@@ -18,15 +18,15 @@ export default function About () {
               A look into my stack.
             </p>
           </div>
-          <article>
+          <ul>
             {
               aboutText.map((text, i) => (
-                <p key={i}>
+                <li className='list-disc' key={i}>
                   {text}
-                </p>
+                </li>
               ))
             }
-          </article>
+          </ul>
         </article>
       </section>
     </main>
