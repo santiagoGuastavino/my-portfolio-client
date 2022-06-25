@@ -1,15 +1,11 @@
-import Image from 'next/image'
-
 export default function ImageBox ({ fileName, skillName }) {
   return (
     <div className='shadow-md shadow-color hover:scale-110 duration-300'>
-      <Image
+      <img
         src={fileName}
-        width={120}
-        height={120}
-        className='mx-auto'
+        className='mx-auto w-[80px] md:w-[150px]'
       />
-      <p className='my-4'>{skillName}</p>
+      <p className='my-2 md:my-4'>{skillName}</p>
     </div>
   )
 }

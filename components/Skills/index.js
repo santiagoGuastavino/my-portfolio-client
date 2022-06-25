@@ -1,35 +1,43 @@
-import expressIcon from '../../public/images/expressjs.png'
-import javascriptIcon from '../../public/images/javascript.png'
-import nextIcon from '../../public/images/nextjs.png'
-import nodeIcon from '../../public/images/nodejs.webp'
-import reactIcon from '../../public/images/reactjs.png'
-import typescriptIcon from '../../public/images/typescript.png'
 import ImageBox from '../ImageBox'
+
+const fileURL = '/images/'
 
 const skillsAndFiles = [
   {
-    file: javascriptIcon,
+    file: fileURL + 'javascript.png',
     skill: 'Javascript'
   },
   {
-    file: typescriptIcon,
+    file: fileURL + 'typescript.png',
     skill: 'Typescript'
   },
   {
-    file: nodeIcon,
+    file: fileURL + 'nodejs.webp',
     skill: 'Node.js'
   },
   {
-    file: expressIcon,
+    file: fileURL + 'expressjs.png',
     skill: 'Express.js'
   },
   {
-    file: reactIcon,
+    file: fileURL + 'nestjs.png',
+    skill: 'Nest.js'
+  },
+  {
+    file: fileURL + 'reactjs.png',
     skill: 'React'
   },
   {
-    file: nextIcon,
+    file: fileURL + 'nextjs.png',
     skill: 'Next.js'
+  },
+  {
+    file: fileURL + 'git.png',
+    skill: 'GIT'
+  },
+  {
+    file: fileURL + 'docker.png',
+    skill: 'Docker'
   }
 ]
 
@@ -46,7 +54,7 @@ export default function Skills () {
           </p>
         </article>
 
-        <article className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
+        <article className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-2 md:py-8'>
           {
             skillsAndFiles.map((skillFile, i) => (
               <ImageBox

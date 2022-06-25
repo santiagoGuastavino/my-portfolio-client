@@ -27,12 +27,15 @@ export default function Socials ({ show }) {
           <FontAwesomeIcon icon={faGithub} className='social-svg' />
         </a>
       </li>
-      <li className='social-li cyan-blackground'>
-        <Link to='Contact' smooth={true} duration={500} className='social-a cursor-pointer'>
-          Email
-          <FontAwesomeIcon icon={faEnvelope} className='social-svg ml-2.5' />
-        </Link>
-      </li>
+      {
+        !show &&
+        <li className='social-li cyan-blackground'>
+          <Link to='Contact' smooth={true} duration={500} className='social-a cursor-pointer'>
+            Email
+            <FontAwesomeIcon icon={faEnvelope} className='social-svg ml-2.5' />
+          </Link>
+        </li>
+      }
       <li className='social-li lgrey-blackground'>
         <a href={resumeURL} target='_blank' rel='noreferrer' className='social-a cursor-pointer'>
           Resume

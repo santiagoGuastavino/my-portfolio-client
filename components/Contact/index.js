@@ -50,8 +50,8 @@ export default function Contact () {
         <div className='pb-8 text-gray-300'>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600'>Contact</p>
           <div className='py-4'>
-            <p>Submit the form below and I&apos;ll get back to you!</p>
-            <p>Or shoot me an e-mail:
+            {/* <p>Submit the form below and I&apos;ll get back to you!</p> */}
+            <p>Shoot me an e-mail:
               <span className='font-bold'>
                 &nbsp;smguastavino@gmail.com
               </span>

@@ -21,7 +21,7 @@ export default function About () {
           <ul>
             {
               aboutText.map((text, i) => (
-                <li className='list-disc' key={i}>
+                <li className='py-2' key={i}>
                   {text}
                 </li>
               ))
