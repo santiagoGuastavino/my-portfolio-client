@@ -36,7 +36,7 @@
   }
 
   .navbar-li {
-    @apply px-4 cursor-pointer;
+    @apply px-4 cursor-pointer hover:underline hover:decoration-pink-600;
   }
 
   .mobile-li {
@@ -53,6 +53,10 @@
 
   .social-svg {
     @apply text-4xl;
+  }
+
+  .main-button {
+    @apply text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 button-animation duration-300;
   }
 
   .button-animation:hover span {
@@ -75,22 +79,20 @@
     @apply border-2 px-4 py-3 my-8 mx-auto flex items-center duration-300 cursor-not-allowed opacity-80 text-gray-600 border-gray-600;
   }
 
-  .project {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-  }
-
-  .project:hover {
-    background-image: linear-gradient(
-      to right,
-      rgba(112, 157, 255, 0.8),
-      hsla(242, 74%, 61%, 0.8)
-    ) !important;
-  }
-
   .project-button {
-    @apply text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-pink-600 hover:border-pink-600 hover:text-white;
+    @apply main-button mx-2 my-0 px-4 py-2 blue-background;
+  }
+
+  .text-shadow {
+    text-transform: uppercase;
+    text-shadow:
+      0 0 1.25px #fff,
+      0 0 2.5px #fff,
+      0 0 3.75px #fff,
+      0 0 5px #ff00de,
+      0 0 8.75px #ff00de,
+      0 0 10px #ff00de,
+      0 0 12.5px #ff00de,
+      0 0 19.5px #ff00de;
   }
 }

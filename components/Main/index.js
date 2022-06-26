@@ -28,7 +28,7 @@ export default function Main () {
           Quick learner, responsible and self-motivated.
         </p>
         <div>
-          <button className='text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 button-animation duration-300'>
+          <button className='main-button'>
             <Link to='Work' smooth={true} duration={500}>
               Check out my work
             </Link>
