@@ -1,3 +1,5 @@
+const defaultURL = process.env.NEXT_PUBLIC_DEFAULT_URL
+
 export async function postReq (url, data) {
   const postSettings = {
     method: 'POST',
@@ -12,7 +14,7 @@ export async function postReq (url, data) {
     body: JSON.stringify(data)
   }
 
-  const response = await fetch(url, postSettings)
+  const response = await fetch(defaultURL + url, postSettings)
   try {
     return response.json()
   } catch (err) {
