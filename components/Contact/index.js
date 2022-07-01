@@ -100,12 +100,12 @@ export default function Contact () {
     }
   }, [formData])
 
-  const isButtonDisabled = buttonState === BUTTON_STATE.disabled || buttonState === BUTTON_STATE.process_finished
+  const isButtonDisabled = buttonState === BUTTON_STATE.disabled || buttonState === BUTTON_STATE.loading || buttonState === BUTTON_STATE.process_finished
   const areInputsDisabled = inputState === INPUT_STATE.disabled
 
   useEffect(() => {
     buttonState === BUTTON_STATE.loading &&
-    setButtonText('...loading')
+    setButtonText('LOADING.....')
 
     buttonState === BUTTON_STATE.process_finished &&
     setButtonText('THANK YOU')
