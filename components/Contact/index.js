@@ -175,7 +175,7 @@ export default function Contact () {
           id='message'
           disabled={areInputsDisabled}
         />
-        <span className='absolute flex justify-center items-center bottom-20 text-pink-600 font-bold'>
+        <span className='absolute flex justify-center items-center bottom-[56px] text-white font-bold text-center w-full bg-pink-600 text-shadow-warning'>
           {userFeed}
         </span>
         <Button
