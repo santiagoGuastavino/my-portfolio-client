@@ -18,7 +18,7 @@ const BUTTON_STATE = {
 }
 
 const FEED_STATE = {
-  incomplete: 'Fill out the fields.',
+  incomplete: 'Fields are empty.',
   notEmail: 'Provide a valid e-mail address.',
   ok: '',
   process_finished: 'MESSAGE DELIVERED'
