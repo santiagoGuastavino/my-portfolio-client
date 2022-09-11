@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { postReq } from '../../helpers/postReq'
 import Button from '../Button'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTriangleExclamation } from '@fortawesome/free-solid-svg-icons'
 
 const regexEmail = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/
 
@@ -18,7 +20,7 @@ const BUTTON_STATE = {
 }
 
 const FEED_STATE = {
-  incomplete: "Fields shouldn't be empty.",
+  incomplete: 'Fill out the form.',
   notEmail: 'Provide a valid e-mail address.',
   ok: '',
   process_finished: 'MESSAGE DELIVERED'
@@ -175,9 +177,19 @@ export default function Contact () {
           id='message'
           disabled={areInputsDisabled}
         />
-        <span className='absolute flex justify-center items-center bottom-[56px] text-white font-bold text-center w-full bg-pink-600 text-shadow-warning'>
-          {userFeed}
-        </span>
+        {userFeed !== FEED_STATE.ok &&
+          <div className='absolute flex w-full justify-center items-center bottom-[56px] bg-[#121212]'>
+            <span className='text-white font-bold text-center text-shadow-warning'>
+              {userFeed !== FEED_STATE.process_finished &&
+                <FontAwesomeIcon className='mx-2 text-pink-600' icon={faTriangleExclamation} />
+              }
+              {userFeed}
+              {userFeed !== FEED_STATE.process_finished &&
+                <FontAwesomeIcon className='mx-2 text-pink-600' icon={faTriangleExclamation} />
+              }
+            </span>
+          </div>
+        }
         <Button
           disabled={isButtonDisabled}
           text={buttonText}

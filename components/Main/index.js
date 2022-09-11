@@ -1,7 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-scroll'
-
 export default function Main () {
   return (
     <main name='Home' className='w-full h-screen blue-background'>
@@ -27,16 +23,6 @@ export default function Main () {
         <p className='color-gray pb-4 max-w[700px]'>
           Quick learner, responsible and self-motivated.
         </p>
-        <div>
-          <button className='main-button'>
-            <Link to='Work' smooth={true} duration={500}>
-              Check out my work
-            </Link>
-            <span className='ml-5 duration-300'>
-              <FontAwesomeIcon icon={faPlay} />
-            </span>
-          </button>
-        </div>
       </section>
     </main>
   )

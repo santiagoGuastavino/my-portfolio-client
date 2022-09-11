@@ -31,10 +31,6 @@
     @apply bg-[#6fc2b0];
   }
 
-  .shadow-color {
-    @apply shadow-[#040c16];
-  }
-
   .navbar-li {
     @apply px-4 cursor-pointer hover:underline hover:decoration-pink-600;
   }
@@ -83,10 +79,6 @@
     @apply mt-8 border-2 px-4 py-3 mx-auto w-[200px] text-center duration-300 cursor-not-allowed opacity-80 text-gray-600 border-gray-600 !important;
   }
 
-  .project-button {
-    @apply main-button mx-2 my-0 px-4 py-2 blue-background;
-  }
-
   .text-shadow-warning {
     text-shadow: 1.5px 1.5px 1.5px #000, -1.5px -1.5px 1.5px #000;
   }
@@ -103,4 +95,39 @@
       0 0 12.5px #ff00de,
       0 0 19.5px #ff00de;
   }
+
+  .project-title {
+    @apply ;
+  }
+
+  .project-link {
+    @apply text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 duration-300 text-center w-[45%] mx-[2,5%] max-w-[150px];
+  }
+}
+
+/* scrollbar styles */
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: 0px 0px 0px 10px inset;
+}
+::-webkit-scrollbar-thumb {
+  color: rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+  width: 6px;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+  width: 6px;
 }

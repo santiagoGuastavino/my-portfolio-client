@@ -21,8 +21,8 @@ export default function About () {
           <ul>
             {
               aboutText.map((text, i) => (
-                <li className='py-2' key={i}>
-                  {text}
+                <li className='my-4' key={i}>
+                  <span className='border-b-[0.1px] pb-1'>{text}</span>
                 </li>
               ))
             }
