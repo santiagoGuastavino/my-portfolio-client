@@ -18,7 +18,7 @@ export default function Main () {
           Proficient in mobile-first responsive design development.
         </p>
         <p className='color-gray max-w[700px]'>
-          Good knowledge of Javascript and web-based technologies.
+          Dexterous in Typescript, Javascript, Java and web-based technologies.
         </p>
         <p className='color-gray pb-4 max-w[700px]'>
           Quick learner, responsible and self-motivated.

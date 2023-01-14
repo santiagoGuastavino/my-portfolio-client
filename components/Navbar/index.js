@@ -6,10 +6,10 @@ import Socials from '../Socials'
 
 const links = [
   'Home',
-  'About',
   'Skills',
-  'Work',
-  'Contact'
+  'About',
+  'Contact',
+  'Work'
 ]
 
 export default function Navbar () {

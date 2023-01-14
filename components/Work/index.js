@@ -1,5 +1,6 @@
-import Project from '../Project'
+// import Project from '../Project'
 
+/*
 const projects = [
   {
     demoLink: 'https://blogs-mern-client.herokuapp.com/',
@@ -38,6 +39,7 @@ const projects = [
     stack: ['Node.js', 'Express.js', 'MVC Architecture', 'REST Architecture', 'MySQL', 'Sequelize']
   }
 ]
+*/
 
 export default function Work () {
   return (
@@ -53,6 +55,10 @@ export default function Work () {
           </p>
         </header>
 
+        <p className='text-gray-100 font-bold'>I&apos;m currently working on migrating my demo projects.</p>
+        <p className='text-gray-100 font-bold'>Heroku has always been my choice for free demo project hosting but, since it&apos;s pricing policy has recently changed, I&apos;ve decided to move to another hosting service that wouldn&apos;t turn into an expense.</p>
+
+        {/*
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
           {projects && projects.map((project, i) => (
             <Project
@@ -64,6 +70,7 @@ export default function Work () {
             />
           ))}
         </div>
+        */}
 
       </section>
     </main>

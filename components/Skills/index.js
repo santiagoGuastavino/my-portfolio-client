@@ -4,36 +4,36 @@ const fileURL = '/images/'
 
 const skillsAndFiles = [
   {
+    file: fileURL + 'typescript.png',
+    skill: 'Typescript'
+  },
+  {
     file: fileURL + 'javascript.png',
     skill: 'Javascript'
   },
   {
-    file: fileURL + 'typescript.png',
-    skill: 'Typescript'
+    file: fileURL + 'java.png',
+    skill: 'Java'
   },
   {
     file: fileURL + 'nodejs.webp',
     skill: 'Node.js'
   },
   {
-    file: fileURL + 'expressjs.png',
-    skill: 'Express.js'
-  },
-  {
     file: fileURL + 'nestjs.png',
     skill: 'Nest.js'
   },
   {
-    file: fileURL + 'reactjs.png',
-    skill: 'React'
+    file: fileURL + 'expressjs.png',
+    skill: 'Express.js'
   },
   {
     file: fileURL + 'nextjs.png',
     skill: 'Next.js'
   },
   {
-    file: fileURL + 'git.png',
-    skill: 'GIT'
+    file: fileURL + 'reactjs.png',
+    skill: 'React'
   },
   {
     file: fileURL + 'docker.png',

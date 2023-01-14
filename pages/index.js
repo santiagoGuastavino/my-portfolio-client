@@ -17,10 +17,10 @@ export default function Home () {
 
       <Navbar />
       <Main />
-      <About />
       <Skills />
-      <Work />
+      <About />
       <Contact />
+      <Work />
       <Socials />
     </>
   )
