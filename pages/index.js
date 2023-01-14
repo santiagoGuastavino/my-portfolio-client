@@ -6,6 +6,7 @@ import Skills from '../components/Skills'
 import Work from '../components/Work'
 import Contact from '../components/Contact'
 import Socials from '../components/Socials'
+import Experience from '../components/Experience'
 
 export default function Home () {
   return (
@@ -16,7 +17,9 @@ export default function Home () {
       </Head>
 
       <Navbar />
+
       <Main />
+      <Experience />
       <Skills />
       <About />
       <Contact />

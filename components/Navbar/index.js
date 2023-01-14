@@ -6,6 +6,7 @@ import Socials from '../Socials'
 
 const links = [
   'Home',
+  'Experience',
   'Skills',
   'About',
   'Contact',
