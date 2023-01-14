@@ -34,7 +34,7 @@ const experiences = [
 export default function Experience () {
   return (
     <main name='Experience' className='w-full h-screen blue-background text-gray-300'>
-      <section className='max-w-[900px] w-full h-full mx-auto experience-section pt-[80px]'>
+      <section className='max-w-[900px] w-full h-full mx-auto experience-section pt-[80px] px-8'>
         <p className='experience-title text-4xl font-bold inline border-b-4 border-pink-600'>
           Experience
         </p>
