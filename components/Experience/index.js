@@ -5,7 +5,9 @@ const experiences = [
     from: 'August 2022',
     until: 'Present',
     verb: 'Using:',
-    tech: ['Typescript', 'Nest.js', 'MongoDB']
+    tech: [
+      'Typescript', 'Node.js', 'Nest.js', 'REST', 'SAAS', 'MongoDB', 'OOP', 'Domain Driven Design', 'Clean Architecture', 'CI/CD', 'TDD', 'Microservices', 'Dependency Injection', 'AWS Lambda', 'Docker'
+    ]
   },
   {
     company: 'Pixel Ecom',
@@ -13,7 +15,9 @@ const experiences = [
     from: 'September 2021',
     until: 'August 2022',
     verb: 'Used:',
-    tech: ['lala', 'lolo', 'lele']
+    tech: [
+      'Javascript', 'Node.js', 'Express.js', 'REST', 'React.js', 'MySQL', 'PHP', 'Wordpress', 'Shopify', 'Ecommerce'
+    ]
   },
   {
     company: 'Game central',
@@ -21,7 +25,9 @@ const experiences = [
     from: 'March 2021',
     until: 'September 2021',
     verb: 'Used:',
-    tech: ['lala', 'lolo', 'lele']
+    tech: [
+      'Javascript', 'Node.js', 'Express.js', 'REST', 'MVC', 'HTML', 'CSS', 'React.js', 'Ecommerce', 'Heroku'
+    ]
   }
 ]
 
@@ -43,17 +49,17 @@ export default function Experience () {
                   {experience.company}
                 </p>
                 <div>
-                  <span>{experience.until}</span>
-                  <span>&nbsp;-&nbsp;</span>
                   <span>{experience.from}</span>
+                  <span>&nbsp;-&nbsp;</span>
+                  <span>{experience.until}</span>
                 </div>
               </div>
               <div className='experience-tech'>
-                <span>{experience.verb}</span>
+                <p>{experience.verb}</p>
                 {experience.tech.map((iTech, i) => (
-                  <span key={i}>
+                  <p key={i}>
                     {iTech}
-                  </span>
+                  </p>
                 ))}
               </div>
             </article>
