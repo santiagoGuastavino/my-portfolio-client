@@ -1,7 +1,9 @@
 [My Portfolio](https://my-portfolio-santiagoguastavino.vercel.app/)
 ---
 
-_This website was built with [Next.js](https://nextjs.org/)._  
+This website was built with [Next.js](https://nextjs.org/).  
+
+---
 
 #### For this project I used:
 
