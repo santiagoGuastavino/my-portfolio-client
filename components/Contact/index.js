@@ -16,14 +16,16 @@ const BUTTON_STATE = {
   disabled: 0,
   ready: 1,
   loading: 2,
-  process_finished: 3
+  process_finished: 3,
+  process_failed: 4
 }
 
 const FEED_STATE = {
   incomplete: 'Fill out the form.',
   notEmail: 'Provide a valid e-mail address.',
   ok: '',
-  process_finished: 'MESSAGE DELIVERED'
+  process_finished: 'MESSAGE DELIVERED',
+  process_failed: "SOMETHING WENT WRONG, EMAIL COULDN'T BE SENT"
 }
 
 const INPUT_STATE = {
@@ -62,6 +64,8 @@ export default function Contact () {
       .then(res => {
         if (res.success) {
           stateProcessComplete()
+        } else {
+          stateProcessFailed()
         }
       })
   }
@@ -88,6 +92,13 @@ export default function Contact () {
     setFormState(FORM_STATE.disabled)
   }
 
+  const stateProcessFailed = () => {
+    setButtonState(BUTTON_STATE.process_failed)
+    setUserFeed(FEED_STATE.process_failed)
+    setInputState(INPUT_STATE.disabled)
+    setFormState(FORM_STATE.disabled)
+  }
+
   useEffect(() => {
     if (
       formData.name === '' |
@@ -102,7 +113,11 @@ export default function Contact () {
     }
   }, [formData])
 
-  const isButtonDisabled = buttonState === BUTTON_STATE.disabled || buttonState === BUTTON_STATE.loading || buttonState === BUTTON_STATE.process_finished
+  const isButtonDisabled =
+    buttonState === BUTTON_STATE.disabled ||
+    buttonState === BUTTON_STATE.loading ||
+    buttonState === BUTTON_STATE.process_finished ||
+    buttonState === BUTTON_STATE.process_failed
   const areInputsDisabled = inputState === INPUT_STATE.disabled
 
   useEffect(() => {
@@ -111,6 +126,9 @@ export default function Contact () {
 
     buttonState === BUTTON_STATE.process_finished &&
     setButtonText('THANK YOU')
+
+    buttonState === BUTTON_STATE.process_failed &&
+    setButtonText('SORRY')
   }, [buttonState])
 
   return (
