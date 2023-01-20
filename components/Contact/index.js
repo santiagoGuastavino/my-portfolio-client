@@ -62,7 +62,7 @@ export default function Contact () {
     setButtonState(BUTTON_STATE.loading)
     postReq('/mailer', formData)
       .then(res => {
-        if (res.success) {
+        if (res.statusCode === 200) {
           stateProcessComplete()
         } else {
           stateProcessFailed()
