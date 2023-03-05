@@ -8,9 +8,9 @@ const links = [
   'Home',
   'Experience',
   'Skills',
+  'Work',
   'About',
-  'Contact',
-  'Work'
+  'Contact'
 ]
 
 export default function Navbar () {

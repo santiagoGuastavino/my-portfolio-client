@@ -21,9 +21,9 @@ export default function Home () {
       <Main />
       <Experience />
       <Skills />
+      <Work />
       <About />
       <Contact />
-      <Work />
       <Socials />
     </>
   )

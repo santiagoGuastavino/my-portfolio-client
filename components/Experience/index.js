@@ -4,9 +4,8 @@ const experiences = [
     title: 'Back-end web developer',
     from: 'August 2022',
     until: 'Present',
-    verb: 'Using:',
     tech: [
-      'Typescript', 'Node.js', 'Nest.js', 'REST', 'SAAS', 'MongoDB', 'OOP', 'Domain Driven Design', 'Clean Architecture', 'CI/CD', 'TDD', 'Microservices', 'Dependency Injection', 'AWS Lambda', 'Docker'
+      'Typescript', 'Node.js', 'Nest.js', 'REST', 'MongoDB', 'OOP', 'Domain Driven Design', 'TDD', 'WebSocket', 'Dependency Injection', 'AWS Lambda', 'AWS S3', 'Docker'
     ]
   },
   {
@@ -14,7 +13,6 @@ const experiences = [
     title: 'Full stack web developer',
     from: 'September 2021',
     until: 'August 2022',
-    verb: 'Used:',
     tech: [
       'Javascript', 'Node.js', 'Express.js', 'REST', 'React.js', 'MySQL', 'PHP', 'Wordpress', 'Shopify', 'Ecommerce'
     ]
@@ -24,7 +22,6 @@ const experiences = [
     title: 'Full stack web developer',
     from: 'March 2021',
     until: 'September 2021',
-    verb: 'Used:',
     tech: [
       'Javascript', 'Node.js', 'Express.js', 'REST', 'MVC', 'HTML', 'CSS', 'React.js', 'Ecommerce', 'Heroku'
     ]
@@ -55,7 +52,6 @@ export default function Experience () {
                 </div>
               </div>
               <div className='experience-tech'>
-                <p>{experience.verb}</p>
                 {experience.tech.map((iTech, i) => (
                   <p key={i}>
                     {iTech}

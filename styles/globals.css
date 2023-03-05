@@ -183,12 +183,6 @@
     display: inline-block;
     color: #8892b0;
   }
-
-  .experience-tech p:first-child {
-    font-weight: 600;
-    text-decoration: none;
-    color: #d1d5db;
-  }
 }
 
 @media(min-width: 900px) {
@@ -246,11 +240,5 @@
     text-decoration: underline;
     display: inline-block;
     color: #8892b0;
-  }
-
-  .experience-tech p:first-child {
-    font-weight: 600;
-    text-decoration: none;
-    color: #d1d5db;
   }
 }

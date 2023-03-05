@@ -1,37 +1,18 @@
-export default function Project ({ demoLink, codeLink, title, stack }) {
+export default function Project ({ title, link, image }) {
   return (
-    <article className='shadow-lg my-2 p-3 w-full'>
-      <p className='text-white px-4 py-3 text-center text-2xl md:text-lg lg:text-2xl'>
+    <a
+      target='_blank'
+      rel='noreferrer'
+      href={link}
+      className='shadow-md hover:scale-105 duration-100 shadow-lg my-1 p-2 w-full'
+    >
+      <p className='text-white px-1 py-1 text-left text-xs md:text-sm lg:text-xl'>
         {title}
       </p>
-      <div className='w-full flex flex-wrap justify-evenly items-center'>
-        <a
-          href={demoLink}
-          target='_blank'
-          rel='noreferrer'
-          className='project-link'
-        >
-          Demo
-        </a>
-        <a
-          href={codeLink}
-          target='_blank'
-          rel='noreferrer'
-          className='project-link'
-        >
-          Code
-        </a>
-      </div>
-      <div className='mt-6 sm:mt-2 flex flex-wrap'>
-        {stack.map((tech, i) => (
-          <p
-            key={i}
-            className='underline mr-4'
-          >
-            {tech}
-          </p>
-        ))}
-      </div>
-    </article>
+      <img
+        src={image}
+        className='mx-auto w-[100%]'
+      />
+    </a>
   )
 }

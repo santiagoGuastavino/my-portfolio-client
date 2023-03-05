@@ -1,42 +1,42 @@
 import ImageBox from '../ImageBox'
 
-const fileURL = '/images/'
+const fileURL = '/images/tech/'
 
 const skillsAndFiles = [
   {
-    file: fileURL + 'typescript.png',
+    image: fileURL + 'typescript.png',
     skill: 'Typescript'
   },
   {
-    file: fileURL + 'javascript.png',
+    image: fileURL + 'javascript.png',
     skill: 'Javascript'
   },
   {
-    file: fileURL + 'java.png',
+    image: fileURL + 'java.png',
     skill: 'Java'
   },
   {
-    file: fileURL + 'nodejs.webp',
+    image: fileURL + 'nodejs.webp',
     skill: 'Node.js'
   },
   {
-    file: fileURL + 'nestjs.png',
+    image: fileURL + 'nestjs.png',
     skill: 'Nest.js'
   },
   {
-    file: fileURL + 'expressjs.png',
+    image: fileURL + 'expressjs.png',
     skill: 'Express.js'
   },
   {
-    file: fileURL + 'nextjs.png',
+    image: fileURL + 'nextjs.png',
     skill: 'Next.js'
   },
   {
-    file: fileURL + 'reactjs.png',
+    image: fileURL + 'reactjs.png',
     skill: 'React'
   },
   {
-    file: fileURL + 'docker.png',
+    image: fileURL + 'docker.png',
     skill: 'Docker'
   }
 ]
@@ -59,7 +59,7 @@ export default function Skills () {
             skillsAndFiles.map((skillFile, i) => (
               <ImageBox
                 key={i}
-                fileName={skillFile.file}
+                fileName={skillFile.image}
                 skillName={skillFile.skill}
               />
             ))

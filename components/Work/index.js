@@ -1,78 +1,81 @@
-// import Project from '../Project'
+import Project from '../Project'
 
-/*
+const fileURL = '/images/project/'
+
 const projects = [
   {
-    demoLink: 'https://blogs-mern-client.herokuapp.com/',
-    codeLink: 'https://github.com/santiagoGuastavino/blogs-mern-client',
-    title: 'MERN Stack',
-    stack: ['Node.js', 'React.js', 'react-router-dom', 'Font Awesome React Component', 'Redux', 'Redux Toolkit']
+    link: 'https://simple-sample.vercel.app/',
+    title: 'Simple Sample.',
+    image: fileURL + 'simple-sample.jpg'
   },
   {
-    demoLink: 'https://smg-react-tailwind.herokuapp.com/',
-    codeLink: 'https://github.com/santiagoGuastavino/react-tailwind',
-    title: 'React.js, Tailwind CSS',
-    stack: ['Node.js', 'React.js', 'react-typed', 'React Icons', 'Tailwind CSS']
+    link: 'https://tuiter.vercel.app',
+    title: 'tuiter',
+    image: fileURL + 'tuiter.jpg'
   },
   {
-    demoLink: 'https://tuiter.vercel.app/',
-    codeLink: 'https://github.com/santiagoGuastavino/tuiter',
-    title: 'Next.js, Firebase',
-    stack: ['Node.js', 'Next.js', 'Firebase', 'Firebase Auth', 'Cloud Firestore', 'Firebase Admin SDK']
+    link: 'https://photography-portfolio-9x7c.onrender.com/',
+    title: 'Photography Portfolio',
+    image: fileURL + 'photography-portfolio.jpg'
   },
   {
-    demoLink: 'https://smg-parallax.herokuapp.com/',
-    codeLink: 'https://github.com/santiagoGuastavino/parallax-effect',
-    title: 'React.js, react-spring',
-    stack: ['Node.js', 'React.js', 'react-spring']
+    link: 'https://pimienta-y-sal-7k17.onrender.com/',
+    title: 'Pimienta & Sal',
+    image: fileURL + 'pimienta-y-sal.jpg'
   },
   {
-    demoLink: 'https://smg-movies-redux.herokuapp.com/',
-    codeLink: 'https://github.com/santiagoGuastavino/movies-react-redux',
-    title: 'React.js, Redux',
-    stack: ['Node.js', 'React.js', 'react-router-dom', 'Redux', 'Redux Toolkit', 'Sass']
+    link: 'https://movies-react-redux.vercel.app/',
+    title: 'My Movie App',
+    image: fileURL + 'movies-react-redux.jpg'
   },
   {
-    demoLink: 'https://g6-game-central.herokuapp.com/',
-    codeLink: 'https://github.com/matiasncocco/grupo_6_GameCentral',
-    title: 'MERN Stack, MVC',
-    stack: ['Node.js', 'Express.js', 'MVC Architecture', 'REST Architecture', 'MySQL', 'Sequelize']
+    link: 'https://movies-mvc.onrender.com/',
+    title: 'Movies',
+    image: fileURL + 'movies-mvc.jpg'
+  },
+  {
+    link: 'https://mercado-liebre-rvel.onrender.com/',
+    title: 'Mercado Liebre',
+    image: fileURL + 'mercado-liebre.jpg'
+  },
+  {
+    link: 'https://parallax-effect-six.vercel.app/',
+    title: 'Parallax Effect',
+    image: fileURL + 'parallax-effect.jpg'
+  },
+  {
+    link: 'https://game-central.onrender.com/',
+    title: 'Game Central',
+    image: fileURL + 'game-central.jpg'
   }
 ]
-*/
 
 export default function Work () {
   return (
-    <main name='Work' className='blue-background w-full md:h-screen text-gray-300'>
-      <section className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+    <main name='Work' className='w-full h-screen blue-background text-gray-300'>
+    <section className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+      <article>
+        <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
+          Work
+        </p>
+        <p className='py-4'>
+          Check out my latest projects.
+        </p>
+      </article>
 
-        <header className='pb-8'>
-          <h2 className='text-4xl font-bold inline border-b-4 border-pink-600'>
-            Work
-          </h2>
-          <p className='py-6'>
-            Check out my latest projects.
-          </p>
-        </header>
-
-        <p className='text-gray-100 font-bold'>I&apos;m currently working on migrating my demo projects.</p>
-        <p className='text-gray-100 font-bold'>Heroku has always been my choice for free demo project hosting but, since it&apos;s pricing policy has recently changed, I&apos;ve decided to move to another hosting service that wouldn&apos;t turn into an expense.</p>
-
-        {/*
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-          {projects && projects.map((project, i) => (
+      <article className='w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-center py-2 md:py-8'>
+        {
+          projects.map((project, i) => (
             <Project
               key={i}
+              link={project.link}
               title={project.title}
-              demoLink={project.demoLink}
-              codeLink={project.codeLink}
-              stack={project.stack}
+              image={project.image}
             />
-          ))}
-        </div>
-        */}
-
-      </section>
-    </main>
+          ))
+        }
+      </article>
+    </section>
+  </main>
   )
 }
