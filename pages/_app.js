@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { useEffect } from 'react'
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react'
 
 export default function MyApp ({ Component, pageProps }) {
   useEffect(() => {
