@@ -1,11 +1,20 @@
 const experiences = [
   {
+    company: 'Shifta',
+    title: 'Software Engineer',
+    from: 'May 2023',
+    until: 'Present',
+    tech: [
+      'Typescript', 'Node.js', 'Next.js', 'React.js', 'Nest.js', 'REST', 'Docker', 'Jenkins'
+    ]
+  },
+  {
     company: 'Limboteams',
     title: 'Back-end web developer',
     from: 'August 2022',
-    until: 'Present',
+    until: 'May 2023',
     tech: [
-      'Typescript', 'Node.js', 'Nest.js', 'REST', 'MongoDB', 'OOP', 'Domain Driven Design', 'TDD', 'WebSocket', 'Dependency Injection', 'AWS Lambda', 'AWS S3', 'Docker'
+      'Typescript', 'Node.js', 'Nest.js', 'REST', 'MongoDB', 'OOP', 'Domain Driven Design', 'Multitier Architecture', 'TDD', 'WebSocket', 'Dependency Injection', 'AWS Lambda', 'AWS S3', 'Docker'
     ]
   },
   {

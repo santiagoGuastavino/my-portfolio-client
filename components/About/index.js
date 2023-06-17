@@ -11,9 +11,14 @@ export default function About () {
             </p>
           </div>
           <ul>
+            <li className='text-white my-2'>
+              <span>
+                I possess expertise in a wide range of technologies, including:
+              </span>
+            </li>
             {
               aboutText.map((text, i) => (
-                <li className='text-white my-2' key={i}>
+                <li key={i} className='text-white my-2'>
                   <span id='little-dot-span'>
                     •&nbsp;
                   </span>
@@ -23,6 +28,9 @@ export default function About () {
                 </li>
               ))
             }
+            <li className='text-white my-2'>
+              With a solid foundation in object-oriented programming, design patterns, and SOLID principles, I excel in creating clean and maintainable code. Additionally, I have experience dockerizing applications and utilizing various other libraries, packages, and services to deliver high-quality solutions.
+            </li>
           </ul>
         </article>
       </section>

@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import {
-  faEnvelope,
-  faUser,
-  faFile
+  faEnvelope
+  // faUser,
+  // faFile
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll'
-import { resumeURL } from '../../helpers/resumeURL'
+// import { resumeURL } from '../../helpers/resumeURL'
 
 export default function Socials ({ show }) {
   return (
@@ -36,7 +36,7 @@ export default function Socials ({ show }) {
           </Link>
         </li>
       }
-      <li className='social-li lgrey-blackground'>
+      {/* <li className='social-li lgrey-blackground'>
         <a href={resumeURL} target='_blank' rel='noreferrer' className='social-a cursor-pointer'>
           Resume
           <div className='relative'>
@@ -44,7 +44,7 @@ export default function Socials ({ show }) {
             <FontAwesomeIcon icon={faFile} className='absolute text-[25px] top-4 left-5 text-gray-400' />
           </div>
         </a>
-      </li>
+      </li> */}
     </ul>
   )
 }

@@ -9,10 +9,13 @@ export default function Main () {
           Santiago Guastavino
         </h1>
         <h2 className='text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold color-gray'>
-          I&apos;m a Full Stack Web Developer
+          I&apos;m a Software Developer
         </h2>
         <p className='color-gray pt-4 max-w[700px]'>
           Skilled in writing clean code.
+        </p>
+        <p className='color-gray max-w[700px]'>
+          I specialize in web development, with a strong focus on creating dynamic and user-friendly websites.
         </p>
         <p className='color-gray max-w[700px]'>
           Proficient in mobile-first responsive design development.
