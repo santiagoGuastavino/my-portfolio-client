@@ -1,0 +1,14 @@
+@import "../../styles/colors";
+
+.header {
+  font-weight: 700;
+  color: $main;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.alt {
+  color: $secondary;
+}
+
+@media (min-width: 768px) {}

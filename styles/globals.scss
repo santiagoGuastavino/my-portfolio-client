@@ -1,0 +1,38 @@
+@import './colors';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+a, p, span {
+  font-size: 16px;
+}
+
+label, input, textarea {
+  font-size: 20px;
+}
+
+button {
+  font-size: 24px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 36px;
+  }
+
+  a, p, span {
+    font-size: 18px;
+  }
+}

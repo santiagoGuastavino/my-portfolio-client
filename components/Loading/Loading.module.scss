@@ -1,0 +1,36 @@
+@import "../../styles/colors.scss";
+
+.wrapper {
+  margin: 0 0 0 -25px;
+  position: relative;
+  width: 100vw;
+  overflow-y: hidden;
+}
+
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon {
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../../styles/colors";
+
+.header {
+  width: 100%;
+  
+  .greet {
+    color: $brand;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}
+
+.article {
+  width: 100%;
+  color: $secondary;
+  margin-top: 20px;
+
+  p {
+    font-size: 18px;
+    margin-top: 10px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .article {
+    p {
+      font-size: 20px;
+    }
+  }
+}
