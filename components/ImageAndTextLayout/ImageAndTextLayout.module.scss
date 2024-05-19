@@ -53,19 +53,24 @@
 @media (min-width: 768px) {
   .imageBox {
     padding: 15px;
-    width: 30%;
-    margin: 20px 1.6%;
+    width: 20%;
+    margin: 20px 6.6%;
   
     &.link { 
       .image {
-        width: 220px;
+        width: 100px;
       }
     }
     
     .image {
-      width: 150px;
-      height: 150px;
+      width: 80px;
+      height: 80px;
       margin: 0 auto 20px auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

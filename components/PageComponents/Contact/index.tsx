@@ -2,13 +2,18 @@ import { Section, Header, Icon, Loading } from "@/components";
 import styles from "./Contact.module.scss";
 import { useEffect, useState, useRef } from "react";
 import { IContactData, IResponse } from "@/types";
-import { AxiosResponse } from "axios";
+import { AxiosResponse, AxiosError } from "axios";
 import { http } from "@/config";
+import { Raleway } from "next/font/google";
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+});
 
 export default function Contact(): JSX.Element {
   const postContactData = async (): Promise<void> => {
     setStatus("loading");
-    document.body.style.overflowY = "hidden";
 
     try {
       const contactData: IContactData = {
@@ -25,19 +30,19 @@ export default function Contact(): JSX.Element {
         cleanUp("error");
       }
     } catch (error) {
-      cleanUp("error");
+      if (error instanceof AxiosError) {
+        cleanUp("error", error?.response?.data?.message);
+      }
     }
   };
 
-  const cleanUp = (status: "ok" | "error"): void => {
+  const cleanUp = (status: "ok" | "error", message?: string): void => {
     setStatus(status);
-
-    document.body.style.overflowY = "auto";
 
     setNameValue("");
     setEmailValue("");
     setMessageValue("");
-    setErrorMessage("");
+    setErrorMessage(message ?? "");
     setDisabled(true);
   };
 
@@ -133,7 +138,7 @@ export default function Contact(): JSX.Element {
                 name="name"
                 value={nameValue}
                 disabled={disabled}
-                className={disabled ? styles.disabled : ""}
+                className={`${raleway.className} ${disabled ? styles.disabled : ""}`}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setNameValue(e.target.value)}
               />
             </div>
@@ -145,7 +150,7 @@ export default function Contact(): JSX.Element {
                 name="email"
                 value={emailValue}
                 disabled={disabled}
-                className={disabled ? styles.disabled : ""}
+                className={`${raleway.className} ${disabled ? styles.disabled : ""}`}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmailValue(e.target.value)}
               />
             </div>
@@ -157,7 +162,7 @@ export default function Contact(): JSX.Element {
                 name="message"
                 value={messageValue}
                 disabled={disabled}
-                className={disabled ? styles.disabled : ""}
+                className={`${raleway.className} ${disabled ? styles.disabled : ""}`}
                 onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
                   setMessageValue(e.target.value)
                 }
@@ -168,7 +173,7 @@ export default function Contact(): JSX.Element {
                 status !== "idle" ? styles.feedback : ""
               }`}
             >
-              {errorMessage && errorMessage !== "" && (
+              {status === "idle" && errorMessage && errorMessage !== "" && (
                 <>
                   <Icon icon="feedback" color="brand" size={20} className="" />
                   <span>{errorMessage}</span>
@@ -182,8 +187,8 @@ export default function Contact(): JSX.Element {
               )}
               {status === "error" && (
                 <>
-                  <Icon icon="menu" color="brand" size={20} className="" />
-                  <span>Unexpected error. Try again later.</span>
+                  <Icon icon="error" color="brand" size={20} className="" />
+                  <span>{errorMessage}</span>
                 </>
               )}
             </div>

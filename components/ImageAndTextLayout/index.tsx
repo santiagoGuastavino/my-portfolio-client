@@ -22,7 +22,9 @@ export default function ImageAndTextLayout({ imageAndTextArray, link }: Props): 
           className={`${styles.imageBox} ${link ? styles.link : ""}`}
           onClick={() => handleClick(element.link)}
         >
-          <Image className={styles.image} src={element.image} alt={element.text} />
+          <div className={styles.image}>
+            <Image src={element.image} alt={element.text} />
+          </div>
           <p>{element.text}</p>
         </div>
       ))}
