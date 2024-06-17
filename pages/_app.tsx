@@ -13,7 +13,7 @@ const raleway = Raleway({
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
   const getWake = async (): Promise<void> => {
     try {
-      await http.get("/wake");
+      await http.get("/init");
     } catch (error) {}
   };
 
